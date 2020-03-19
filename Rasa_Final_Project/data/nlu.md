@@ -16,7 +16,7 @@
 - go [north](direction:NORTH)
 - go [south](direction:SOUTH)
 - [west](direction:WEST)
-- [south](direction:OST)
+- [south](direction:SOUTH)
 - [north](direction:NORTH)
 - [east](direction:EAST)
 
