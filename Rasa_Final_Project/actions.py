@@ -24,7 +24,7 @@ map = {
     "MEETING ROOM": [None, "OFFICE", "LAB", "CAFETERIA"],
     "LAB": ["MEETING ROOM", None, "AUDITORIUM", None],
     "AUDITORIUM": ["LAB", None, "MAIN ENTRANCE", None],
-    "CAFETERIA": [None, "MEETING", None, "MAIN ENTRANCE"]
+    "CAFETERIA": [None, "MEETING ROOM", None, "MAIN ENTRANCE"]
 
 }
 
