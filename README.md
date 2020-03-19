@@ -1,8 +1,10 @@
 # Dialogsystem_V20_final_project
 Xiao Li
 
-An adventure game using dialogue system
+An adventure game using rasa-based dialogue system
 
-A game controlled with dialogue system. You were hard-working in the language lab and wanted to just take a nap and you overslept. Now it is midnight and dark inside. You are eager to try to get out through the doors. 
+You were hard-working for the final project in the language lab and wanted to just take a nap but overslept. Now it is midnight and scary inside. You are eager to try to get out through the doors. 
+
+to the NORTH, SOUTH, EAST or WEST? What will you find?
 
 Now, it is your turn!
