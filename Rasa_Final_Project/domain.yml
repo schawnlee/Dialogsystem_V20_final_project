@@ -1,0 +1,47 @@
+intents:
+  - greet
+  - inform
+  - deny
+  - affirm
+
+slots:
+  room:
+    type: unfeaturized
+    initial_value: "LAB"
+  direction:
+    type: unfeaturized
+  requested_slot:
+    type: unfeaturized
+
+entities:
+  - direction
+
+actions:
+  - utter_greet
+  - utter_default
+  - utter_goodbye
+  - action_update
+  - utter_room
+  - utter_no_way_out
+  - action_restart
+
+responses:
+  utter_greet:
+  - text: "Hey! You are awake? You've been sleeping in the language lab for hours. It is midnight! You are locked
+          in FLOV!!!And there something sounds wired! try to find the exit! In which direction do you want to go now?"
+
+  utter_default:
+  - text: "You don't want to jibber jabber, you just want to get out! Where do you want to go? EAST, WEST, NORTH or SOUTH?"
+
+  utter_goodbye:
+  - text: "You just got out!!! God, that was scary!!!"
+
+  utter_room:
+  - text: "You are now in {room}"
+
+  utter_no_way_out:
+    - text: "There is no way out! You are still in {room}"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

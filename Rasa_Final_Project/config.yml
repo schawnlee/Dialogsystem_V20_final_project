@@ -1,0 +1,26 @@
+language: "en"
+
+pipeline:
+  - name: ConveRTTokenizer
+  - name: ConveRTFeaturizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: KeywordIntentClassifier
+  - name: CRFEntityExtractor
+  - name: ResponseSelector
+
+policies:
+  - name: AugmentedMemoizationPolicy
+    max_history: 5
+  - name: FallbackPolicy
+    nlu_threshold: 0.4
+    core_threshold: 0.3
+    fallback_action_name: "action_default_fallback"
+
+
+
+
